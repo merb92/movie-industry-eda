@@ -1,7 +1,7 @@
 # movie-industry-eda
 
 # Purpose
-Do an Exploritory Data Analysis of the movie industry to answer the question, "What types of films are currently doing the best at the box office?" and provide some actionable insights from that analysis.
+Do an Exploratory Data Analysis of the movie industry to answer the question, "What types of films are currently doing the best at the box office?" and provide some actionable insights from that analysis.
 
 # Summary of Results
 
@@ -39,13 +39,15 @@ It was only when I looked at the maximum profit per genre, did other genres show
 
 In these genres there were 37 movies that were more profitable than the upper whisker of profit in the Animation genre, and the first noticeable attribute of them was that so many were part of movie franchises. After researching each movie, I found that 81% of them were part of a movie franchise.
 
+# Recommendations
+
 From the analysis done so far I have the following recommendations.
 
 Focus on the Animation genre, it is the the most likely to be profitable and that profit will likely be higher than the other genres.
 
 Keep an eye out for Action/Adventure/Fantasy/Sci-Fi movies that have franchise potential because they have the potential to make the highest profits although there is more financial risk involved.
 
-Future Work
+# Future Work
 
 Further analyze movies in the Animation genre to find other attributes that would help increase the probability of profit and return on investment
 
@@ -71,9 +73,9 @@ The following Python libraries:
 * ast
 * numpy
 
-API access to www.themoviedb.org 
+API access to www.themoviedb.org
 
-Instructions on getting API access can be found at https://developers.themoviedb.org/3/getting-started/introduction 
+Instructions on getting API access can be found at https://developers.themoviedb.org/3/getting-started/introduction
 
 Jupyter Notebook server version 5.7.8+
 
@@ -83,6 +85,10 @@ Jupyter Notebook server version 5.7.8+
 
 # Usage
 * Download repo
-* Open index.ipynb in Jupyter notebook
+* Open [index.ipynb](index.ipynb) in a Jupyter notebook
 * Run All
 * Please note,the API queries are in the TMDB_Genres.ipynb and Get_Missing_Genres_TMDB.ipynb files.  Since those API queries have already been run and the results saved in .csv files in the datasets directory, they do not need to be rerun in order to run index.ipynb.  Get_Missing_Genres_TMDB.ipynb files has some hardcoded data cleaning of strings, if the underlining data changes, this datacleaning may fail and need updated.
+
+# Further Information
+
+Read the [summary presentation](movie_analysis_presentation.pdf) or the related [blog article](https://medium.com/analytics-vidhya/adjusting-for-inflation-when-analysing-historical-data-with-python-9d69a8dcbc27).
